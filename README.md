@@ -1,4 +1,6 @@
 # Topics-In-Deep-Learning  
+https://github.com/a-dhagat/Topics-In-Deep-Learning/blob/master/6DOF%20Pose%20Estimation%20from%20Voxelized%20Point-Clouds.pdf
+
 This project explores how 2 point clouds can be registered (aligned) by taking into account their spatial properties.  
 The point cloud is first converted to an occupancy grid (binary grid - 0 if a voxel is empty and 1 if it is filled). Then 3D convolutions are applied to it such that we can extract a feature vector from it.  
 Both point clouds share convolution weights, and are then concatenated, like in a Siamese architecture, and then through _fc_ layers, regressed to a pose - (rotation and translation).  
